@@ -1,13 +1,93 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+
+.header {
+  position: sticky;
+  width: 100vw;
+  height: 10vh;
+  transition: all 0.2s ease;
+  background-size: cover !important;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  width: 100vw;
+  height: 10vh;
+  transition: all 0.2s ease;
+  background-size: cover !important;
+}
+
+.container {
+  display: flex;
+  height: 80vh;
+}
+
+.leftPanel {
+  width: 25%;
+  transition: all 0.2s ease;
+
+  background-size: cover !important;
+}
+
+.rightPanel {
+  width: 25%;
+  transition: all 0.2s ease;
+
+  background-size: cover !important;
+}
+
+.main {
+  width: 50%;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover !important;
+}
+
+.main .shuffleButton {
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  outline: none;
+  margin: 10px;
+}
+
+.main .autoPlayButton {
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  outline: none;
+  margin: 10px;
+  background-color: #4caf50;
 }
