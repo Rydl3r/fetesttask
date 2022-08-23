@@ -1,6 +1,6 @@
 import "../index.css";
 
-function LeftPanel(props: any) {
+function LeftPanel(props: { background: string }) {
   return (
     <div
       className="leftPanel"

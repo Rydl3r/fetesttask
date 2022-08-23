@@ -1,6 +1,6 @@
 import "../index.css";
 
-function Header(props: any) {
+function Header(props: { background: string }) {
   return (
     <div
       className="footer"

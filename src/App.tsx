@@ -15,12 +15,18 @@ import Dyno from "./assets/img/dyno.jpg";
 import Planets from "./assets/img/planets.jpg";
 
 function App() {
-  const [images, setImages] = useState([Cats, Chubaka, Dogs, Dyno, Planets]);
+  const [images, setImages] = useState<string[]>([
+    Cats,
+    Chubaka,
+    Dogs,
+    Dyno,
+    Planets,
+  ]);
 
-  const shuffleImages = () => {
-    const newImages = [...images];
-    for (let i = newImages.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
+  const shuffleImages = (): void => {
+    const newImages: string[] = [...images];
+    for (let i: number = newImages.length - 1; i > 0; i--) {
+      const j: number = Math.floor(Math.random() * (i + 1));
       [newImages[i], newImages[j]] = [newImages[j], newImages[i]];
     }
     setImages(newImages);

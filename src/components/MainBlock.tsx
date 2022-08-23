@@ -1,14 +1,15 @@
 import "../index.css";
 import { useState } from "react";
 
-function MainBlock(props: any) {
-  const [currentColor, setCurrentColor] = useState("red");
+function MainBlock(props: { background: string; shuffle: () => void }) {
+  const [currentColor, setCurrentColor] = useState<string>("red");
 
-  const autoPlay = () => {
+  const autoPlay = (): void => {
     setInterval(() => {
       props.shuffle();
     }, 31200);
   };
+
   return (
     <div
       className="main"
