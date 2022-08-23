@@ -14,7 +14,7 @@ import Dogs from "./assets/img/dogs.jpg";
 import Dyno from "./assets/img/dyno.jpg";
 import Planets from "./assets/img/planets.jpg";
 
-function App() {
+function App(): JSX.Element {
   const [images, setImages] = useState<string[]>([
     Cats,
     Chubaka,

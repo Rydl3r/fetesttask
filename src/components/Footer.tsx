@@ -1,6 +1,6 @@
 import "../index.css";
 
-function Header(props: { background: string }) {
+function Footer(props: { background: string }): JSX.Element {
   return (
     <div
       className="footer"
@@ -11,4 +11,4 @@ function Header(props: { background: string }) {
   );
 }
 
-export default Header;
+export default Footer;

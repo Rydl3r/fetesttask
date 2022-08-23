@@ -1,6 +1,6 @@
 import "../index.css";
 
-function Header(props: { background: string }) {
+function Header(props: { background: string }): JSX.Element {
   return (
     <div
       className="header"

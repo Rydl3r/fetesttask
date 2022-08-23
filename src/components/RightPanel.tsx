@@ -1,6 +1,6 @@
 import "../index.css";
 
-function RightPanel(props: { background: string }) {
+function RightPanel(props: { background: string }): JSX.Element {
   return (
     <div
       className="rightPanel"

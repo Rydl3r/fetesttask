@@ -79,6 +79,10 @@ img {
   margin: 10px;
 }
 
+.main .shuffleButton:hover {
+  filter: brightness(0.85);
+}
+
 .main .autoPlayButton {
   color: white;
   border: none;
@@ -90,4 +94,8 @@ img {
   outline: none;
   margin: 10px;
   background-color: #4caf50;
+}
+
+.main .autoPlayButton:hover {
+  background-color: #3e8e41;
 }

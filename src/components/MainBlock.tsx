@@ -1,7 +1,10 @@
 import "../index.css";
 import { useState } from "react";
 
-function MainBlock(props: { background: string; shuffle: () => void }) {
+function MainBlock(props: {
+  background: string;
+  shuffle: () => void;
+}): JSX.Element {
   const [currentColor, setCurrentColor] = useState<string>("red");
 
   const autoPlay = (): void => {
